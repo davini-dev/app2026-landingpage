@@ -11,13 +11,15 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       {/* Header - Clean & Simple */}
       <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200">
-        <div className="container flex h-40 md:h-48 items-center justify-center px-4 md:px-6 max-w-7xl mx-auto">
+        <div className="container flex h-40 md:h-56 lg:h-64 items-center justify-center px-4 md:px-6 max-w-7xl mx-auto">
           <Image 
             src="/logo-saude-real.png"
             alt="SR Saúde Real Logo"
-            width={400}
-            height={400}
-            className="h-32 md:h-40 w-auto object-contain"
+            width={600}
+            height={600}
+            className="h-32 md:h-48 lg:h-56 w-auto object-contain"
+            priority
+            quality={95}
           />
         </div>
       </header>
@@ -92,10 +94,11 @@ export default function Home() {
                 <Image
                   src="/hero-microgreens.jpg"
                   alt="Microverdes frescos"
-                  width={700}
-                  height={700}
+                  width={800}
+                  height={800}
                   className="w-full h-auto object-cover"
                   priority
+                  quality={90}
                 />
                 {/* Floating Badge */}
                 <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-4 py-3 rounded-2xl shadow-lg border">
@@ -170,9 +173,10 @@ export default function Home() {
                 <Image
                   src="/qr-scanning.jpg"
                   alt="Escaneando QR Code"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
+                  width={700}
+                  height={700}
+                  className="w-full h-auto object-cover"
+                  quality={90}
                 />
               </div>
               {/* Floating Card */}
@@ -390,9 +394,10 @@ export default function Home() {
                 <Image
                   src="/growing-microgreens.jpg"
                   alt="Cultivo tecnológico de microverdes"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
+                  width={700}
+                  height={700}
+                  className="w-full h-auto object-cover"
+                  quality={90}
                 />
               </div>
             </div>
