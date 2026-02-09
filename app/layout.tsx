@@ -7,9 +7,15 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'SR Saúde Real - Microverdes Orgânicos Rastreados | Praia Grande - SP',
+  description: 'Microverdes frescos 100% orgânicos com rastreamento QR Code. 40x mais nutrientes, cultivados no litoral sul de SP. Entregas Peruíbe até Santos.',
+  keywords: ['microverdes', 'orgânicos', 'rastreamento', 'QR Code', 'Praia Grande', 'Santos', 'saúde', 'nutrição'],
+  authors: [{ name: 'SR Saúde Real' }],
+  openGraph: {
+    title: 'SR Saúde Real - Microverdes Orgânicos',
+    description: 'Microverdes frescos com rastreamento QR Code. 40x mais nutrientes!',
+    type: 'website',
+  },
   icons: {
     icon: [
       {
@@ -35,7 +41,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

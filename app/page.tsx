@@ -13,7 +13,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200">
         <div className="container flex h-40 md:h-56 lg:h-64 items-center justify-center px-4 md:px-6 max-w-7xl mx-auto">
           <Image 
-            src="/logo-saude-real.png"
+            src="/logo-saude-real.webp"
             alt="SR Saúde Real Logo"
             width={600}
             height={600}
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="absolute -bottom-4 -left-4 w-64 h-64 bg-primary/20 rounded-full blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-background">
                 <Image
-                  src="/hero-microgreens.jpg"
+                  src="/hero-microgreens.webp"
                   alt="Microverdes frescos"
                   width={800}
                   height={800}
@@ -171,12 +171,13 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-background">
                 <Image
-                  src="/qr-scanning.jpg"
+                  src="/qr-scanning.webp"
                   alt="Escaneando QR Code"
                   width={700}
                   height={700}
                   className="w-full h-auto object-cover"
-                  quality={90}
+                  quality={85}
+                  loading="lazy"
                 />
               </div>
               {/* Floating Card */}
@@ -392,12 +393,13 @@ export default function Home() {
               <div className="absolute -top-4 -left-4 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-background">
                 <Image
-                  src="/growing-microgreens.jpg"
+                  src="/growing-microgreens.webp"
                   alt="Cultivo tecnológico de microverdes"
                   width={700}
                   height={700}
                   className="w-full h-auto object-cover"
-                  quality={90}
+                  quality={85}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -422,7 +424,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
                   <Avatar className="w-14 h-14 ring-2 ring-primary/20">
-                    <AvatarImage src="/avatar-1.jpg" alt="Ana Paula" />
+                    <AvatarImage src="/avatar-1.webp" alt="Ana Paula" />
                     <AvatarFallback className="bg-primary/10">AP</AvatarFallback>
                   </Avatar>
                   <div>
@@ -448,7 +450,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
                   <Avatar className="w-14 h-14 ring-2 ring-primary/20">
-                    <AvatarImage src="/avatar-2.jpg" alt="Carlos Eduardo" />
+                    <AvatarImage src="/avatar-2.webp" alt="Carlos Eduardo" />
                     <AvatarFallback className="bg-primary/10">CE</AvatarFallback>
                   </Avatar>
                   <div>
@@ -474,7 +476,7 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center gap-4 mb-4">
                   <Avatar className="w-14 h-14 ring-2 ring-primary/20">
-                    <AvatarImage src="/avatar-3.jpg" alt="Juliana Santos" />
+                    <AvatarImage src="/avatar-3.webp" alt="Juliana Santos" />
                     <AvatarFallback className="bg-primary/10">JS</AvatarFallback>
                   </Avatar>
                   <div>
