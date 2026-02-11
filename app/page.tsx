@@ -25,7 +25,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Modern & Mobile-First */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-secondary/20 via-background to-accent/10">
+      <section id="inicio" className="relative overflow-hidden bg-gradient-to-br from-secondary/20 via-background to-accent/10">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Delivery Info Banner */}
-      <section className="bg-gradient-to-r from-primary via-accent to-primary py-4 md:py-6">
+      <section id="entrega" className="bg-gradient-to-r from-primary via-accent to-primary py-4 md:py-6">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-primary-foreground">
             <div className="flex items-center gap-3">
@@ -355,7 +355,7 @@ export default function Home() {
       </section>
 
       {/* Growing Process - Tech Aesthetic */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-background to-muted/20">
+      <section id="cultivo" className="py-12 md:py-16 bg-gradient-to-br from-background to-muted/20">
         <div className="container px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-6 md:gap-10 items-center">
             <div className="space-y-4 order-2 lg:order-1">
@@ -580,8 +580,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section - Modern & Bold */}
-      <section className="mt-12 md:mt-16 py-12 md:py-16 bg-gradient-to-br from-primary via-accent to-primary relative overflow-hidden">
+       {/* CTA Section - Final Push */}
+      <section id="contato" className="mt-12 md:mt-16 py-12 md:py-16 bg-gradient-to-br from-primary via-accent to-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
         <div className="container relative px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
