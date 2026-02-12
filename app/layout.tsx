@@ -3,12 +3,21 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _geist = Geist({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial'],
+});
+const _geistMono = Geist_Mono({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: false,
+});
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'SR Saúde Real - Microverdes Frescos e Rastreáveis',
+  description: 'Microverdes 100% orgânicos cultivados no litoral sul de SP. Rastreamento por QR Code, 40x mais nutrientes. Entregas em Peruíbe até Santos.',
   generator: 'v0.app',
   icons: {
     icon: [
