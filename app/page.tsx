@@ -61,7 +61,7 @@ export default function Home() {
 
               <div className="flex flex-col sm:flex-row gap-2 md:gap-4 pt-1 justify-center lg:justify-start">
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-lg px-5 md:px-8 h-11 md:h-14 shadow-lg shadow-primary/20">
-                  <a href="https://www.instagram.com/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
+                  <a href="https://ig.me/m/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
                     Experimentar Agora
                     <ChevronRight className="w-4 h-4 md:w-5 md:h-5 ml-1" />
                   </a>
@@ -598,7 +598,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4">
               <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90 text-base md:text-lg px-6 md:px-8 h-12 md:h-14 shadow-2xl">
-                <a href="https://www.instagram.com/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
+                <a href="https://ig.me/m/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
                   <Heart className="w-5 h-5 mr-2" />
                   Fazer Meu Pedido
                 </a>
