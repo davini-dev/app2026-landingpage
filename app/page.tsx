@@ -60,13 +60,17 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-2 md:gap-4 pt-1 justify-center lg:justify-start">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-lg px-5 md:px-8 h-11 md:h-14 shadow-lg shadow-primary/20">
-                  Experimentar Agora
-                  <ChevronRight className="w-4 h-4 md:w-5 md:h-5 ml-1" />
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-lg px-5 md:px-8 h-11 md:h-14 shadow-lg shadow-primary/20">
+                  <a href="https://www.instagram.com/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
+                    Experimentar Agora
+                    <ChevronRight className="w-4 h-4 md:w-5 md:h-5 ml-1" />
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-sm md:text-lg px-5 md:px-8 h-11 md:h-14 bg-transparent border-2">
-                  <QrCode className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                  Ver Rastreamento
+                <Button asChild size="lg" variant="outline" className="text-sm md:text-lg px-5 md:px-8 h-11 md:h-14 bg-transparent border-2">
+                  <a href="#rastreamento">
+                    <QrCode className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                    Ver Rastreamento
+                  </a>
                 </Button>
               </div>
 
@@ -593,12 +597,16 @@ export default function Home() {
               Experimente e sinta a diferença!
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-background text-foreground hover:bg-background/90 text-base md:text-lg px-6 md:px-8 h-12 md:h-14 shadow-2xl">
-                <Heart className="w-5 h-5 mr-2" />
-                Fazer Meu Pedido
+              <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90 text-base md:text-lg px-6 md:px-8 h-12 md:h-14 shadow-2xl">
+                <a href="https://www.instagram.com/sauderealmicroverdes" target="_blank" rel="noopener noreferrer">
+                  <Heart className="w-5 h-5 mr-2" />
+                  Fazer Meu Pedido
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 h-12 md:h-14 bg-transparent border-2 border-background text-background hover:bg-background/10">
-                Falar no WhatsApp
+              <Button asChild size="lg" variant="outline" className="text-base md:text-lg px-6 md:px-8 h-12 md:h-14 bg-transparent border-2 border-background text-background hover:bg-background/10">
+                <a href="https://wa.me/5513978178145" target="_blank" rel="noopener noreferrer">
+                  Falar no WhatsApp
+                </a>
               </Button>
             </div>
             <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/80 pt-2">
@@ -659,7 +667,7 @@ export default function Home() {
                   Peruíbe até Santos
                 </li>
                 <li className="pt-3">
-                  <a href="#" className="text-primary hover:underline font-medium">Consultar disponibilidade</a>
+                  <a href="https://wa.me/5513978178145" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Consultar disponibilidade</a>
                 </li>
               </ul>
             </div>
