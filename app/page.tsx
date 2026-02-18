@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-muted">
                   <Truck className="w-3 h-3 md:w-4 md:h-4 text-accent" />
-                  <span className="font-medium">Peruíbe → Santos</span>
+                  <span className="font-medium">Mongaguá e Praia Grande</span>
                 </div>
               </div>
 
@@ -127,7 +127,7 @@ export default function Home() {
               </div>
               <div className="text-center md:text-left">
                 <p className="text-sm opacity-90">Entregas</p>
-                <p className="font-bold text-lg">Terça e Sexta</p>
+                <p className="font-bold text-lg">Toda Sexta-feira</p>
               </div>
             </div>
             <div className="hidden md:block w-px h-12 bg-white/30" />
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div className="text-center md:text-left">
                 <p className="text-sm opacity-90">Cobertura</p>
-                <p className="font-bold text-lg">Peruíbe até Santos</p>
+                <p className="font-bold text-lg">Mongaguá e Praia Grande</p>
               </div>
             </div>
             <div className="hidden md:block w-px h-12 bg-white/30" />
@@ -564,8 +564,8 @@ export default function Home() {
                 Para onde vocês entregam?
               </AccordionTrigger>
               <AccordionContent className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                Entregamos em todo o litoral sul de São Paulo, desde Peruíbe até Santos! 
-                Estamos localizados no Jd. Real, Praia Grande. Entregas às terças e sextas-feiras 
+                Entregamos exclusivamente em Mongaguá e Praia Grande! 
+                Estamos localizados no Jd. Real, Praia Grande. Entregas todas as sextas-feiras 
                 para garantir máximo frescor. Consulte disponibilidade no WhatsApp!
               </AccordionContent>
             </AccordionItem>
@@ -590,11 +590,10 @@ export default function Home() {
         <div className="container relative px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center space-y-6 md:space-y-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground text-balance">
-              Pronto para revolucionar sua alimentação?
+              Sexta é dia de frescor real.
             </h2>
             <p className="text-base md:text-lg text-primary-foreground/90 text-pretty leading-relaxed">
-              Junte-se a mais de 1.000 pessoas que já escolheram saúde, qualidade e transparência. 
-              Experimente e sinta a diferença!
+              Colhido na sexta. Entregue horas depois. Frescor máximo.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4">
               <Button asChild size="lg" className="bg-background text-foreground hover:bg-background/90 text-base md:text-lg px-6 md:px-8 h-12 md:h-14 shadow-2xl">
@@ -660,11 +659,11 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <Calendar className="w-4 h-4 text-primary" />
-                  Terça e Sexta-feira
+                  Toda Sexta-feira
                 </li>
                 <li className="flex items-center gap-2">
                   <Truck className="w-4 h-4 text-primary" />
-                  Peruíbe até Santos
+                  Mongaguá e Praia Grande
                 </li>
                 <li className="pt-3">
                   <a href="https://wa.me/5513978178145" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Consultar disponibilidade</a>
