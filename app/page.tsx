@@ -38,13 +38,13 @@ export default function Home() {
                 100% Rastreável por QR Code
               </Badge>
               
-              <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-balance leading-tight bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text">
-                Saúde de verdade na palma da sua mão
-              </h2>
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-balance leading-tight bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text">
+                Microverdes Orgânicos: O Segredo dos Chefs e Atletas Fitness
+              </h1>
               
               <p className="text-sm md:text-base lg:text-lg text-muted-foreground text-pretty leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Microverdes frescos cultivados no litoral sul de SP. 
-                Tecnologia de rastreamento + nutrição poderosa = sua saúde em outro nível!
+                Produtos naturais e diferenciados para quem busca performance em academias e sofisticação na gastronomia. 
+                Frescor máximo em Praia Grande e Mongaguá com rastreabilidade total.
               </p>
               
               {/* Location Badge */}
@@ -164,7 +164,7 @@ export default function Home() {
               Tecnologia de Rastreamento
             </Badge>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-balance">
-              Escaneie o QR Code e veja tudo sobre seu alimento
+              Alimentos Naturais com Rastreabilidade Digital
             </h2>
             <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
               Transparência total em um clique. Toda a jornada do seu microverde, da semente até sua mesa.
@@ -262,8 +262,8 @@ export default function Home() {
       <section id="beneficios" className="py-12 md:py-16 bg-muted/30">
         <div className="container px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-balance">
-              Por que escolher nossos microverdes?
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
+              O Diferencial para sua Dieta Fitness e Cozinha Gourmet
             </h2>
             <p className="text-sm md:text-base text-muted-foreground text-pretty leading-relaxed">
               Tecnologia, sabor e saúde em cada porção. Veja o que nos torna especiais.
