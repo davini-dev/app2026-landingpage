@@ -189,8 +189,8 @@ export default function Home() {
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-background">
                 <Image
-                  src="/qr-scanning.webp"
-                  alt="Escaneando QR Code"
+                  src="/microgreens-tray.webp"
+                  alt="Bandeja de Microverdes Frescos"
                   width={700}
                   height={700}
                   className="w-full h-auto object-cover"
@@ -246,7 +246,7 @@ export default function Home() {
               <div className="pt-4">
                 <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground shadow-lg">
                   <Smartphone className="w-5 h-5 mr-2" />
-                  Testar Rastreamento
+                  Realizar Rastreamento
                 </Button>
               </div>
             </div>
