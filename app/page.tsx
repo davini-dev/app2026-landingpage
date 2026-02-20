@@ -158,20 +158,34 @@ export default function Home() {
       <section id="rastreamento" className="py-12 md:py-16 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container relative px-4 md:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
-            <Badge className="mb-3 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
-              <Smartphone className="w-4 h-4 mr-2" />
-              Tecnologia de Rastreamento
-            </Badge>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 text-balance">
-              Alimentos Naturais com Rastreabilidade Digital
-            </h2>
-            <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-              Transparência total em um clique. Toda a jornada do seu microverde, da semente até sua mesa.
-            </p>
+          <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12 space-y-6">
+            <div className="flex justify-center">
+              <Badge className="bg-orange-50 text-orange-600 hover:bg-orange-100 border-orange-200 px-4 py-1.5 rounded-full text-sm font-medium flex items-center gap-2">
+                <Smartphone className="w-4 h-4" />
+                Tecnologia de Rastreamento
+              </Badge>
+            </div>
+            
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground tracking-tight">
+                Alimentos Naturais com Rastreabilidade Digital
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed">
+                Transparência total em um clique. Toda a jornada do seu microverde, da semente até sua mesa.
+              </p>
+            </div>
+
+            <div className="pt-8 space-y-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                Como funciona o rastreamento?
+              </h3>
+              <p className="text-lg md:text-xl text-muted-foreground/80 max-w-2xl mx-auto leading-relaxed">
+                Cada embalagem tem um QR Code exclusivo. Basta apontar a câmera do seu celular e descobrir:
+              </p>
+            </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
             <div className="relative order-2 lg:order-1">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-background">
                 <Image
@@ -183,66 +197,48 @@ export default function Home() {
                   quality={90}
                 />
               </div>
-              {/* Floating Card */}
-              <div className="absolute -bottom-6 -right-4 lg:-right-8 bg-card border-2 border-primary/20 p-4 md:p-6 rounded-2xl shadow-2xl max-w-xs backdrop-blur-sm bg-background/95">
-                <div className="flex items-start gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <QrCode className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-base md:text-lg">Tecnologia QR</p>
-                    <p className="text-sm text-muted-foreground">Rastreamento instantâneo</p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <div className="space-y-6 order-1 lg:order-2">
-              <h3 className="text-2xl md:text-3xl font-bold text-balance">
-                Como funciona o rastreamento?
-              </h3>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Cada embalagem tem um QR Code exclusivo. Basta apontar a câmera do seu celular e descobrir:
-              </p>
               
               <div className="space-y-4">
-                <div className="flex gap-4 p-4 rounded-2xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-all">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-lg">
+                <div className="flex gap-6 p-6 rounded-[2rem] bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition-all group">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-full bg-orange-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-orange-200">
                     1
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1 text-base md:text-lg">Data do Plantio</h4>
-                    <p className="text-sm md:text-base text-muted-foreground">Exatamente quando suas sementes foram plantadas</p>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="font-bold text-xl md:text-2xl text-foreground mb-1">Data do Plantio</h4>
+                    <p className="text-base md:text-lg text-muted-foreground/80">Exatamente quando suas sementes foram plantadas</p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 p-4 rounded-2xl bg-accent/10 border border-accent/20 hover:bg-accent/15 transition-all">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-accent text-accent-foreground flex items-center justify-center font-bold shadow-lg">
+                <div className="flex gap-6 p-6 rounded-[2rem] bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition-all group">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-full bg-orange-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-orange-200">
                     2
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1 text-base md:text-lg">Condições de Cultivo</h4>
-                    <p className="text-sm md:text-base text-muted-foreground">Temperatura, umidade e todos os cuidados</p>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="font-bold text-xl md:text-2xl text-foreground mb-1">Condições de Cultivo</h4>
+                    <p className="text-base md:text-lg text-muted-foreground/80">Temperatura, umidade e todos os cuidados</p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 p-4 rounded-2xl bg-secondary/20 border border-secondary/30 hover:bg-secondary/30 transition-all">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-secondary-foreground flex items-center justify-center font-bold shadow-lg">
+                <div className="flex gap-6 p-6 rounded-[2rem] bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition-all group">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-full bg-orange-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-orange-200">
                     3
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1 text-base md:text-lg">Data da Colheita</h4>
-                    <p className="text-sm md:text-base text-muted-foreground">Frescor máximo: da colheita até você</p>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="font-bold text-xl md:text-2xl text-foreground mb-1">Data da Colheita</h4>
+                    <p className="text-base md:text-lg text-muted-foreground/80">Frescor máximo: da colheita até você</p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 p-4 rounded-2xl bg-primary/5 border border-primary/10 hover:bg-primary/10 transition-all">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-lg">
+                <div className="flex gap-6 p-6 rounded-[2rem] bg-orange-50/50 border border-orange-100 hover:bg-orange-50 transition-all group">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-full bg-orange-600 text-white flex items-center justify-center text-xl font-bold shadow-lg shadow-orange-200">
                     4
                   </div>
-                  <div>
-                    <h4 className="font-semibold mb-1 text-base md:text-lg">Certificações</h4>
-                    <p className="text-sm md:text-base text-muted-foreground">Todos os selos de qualidade orgânica</p>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="font-bold text-xl md:text-2xl text-foreground mb-1">Certificações</h4>
+                    <p className="text-base md:text-lg text-muted-foreground/80">Todos os selos de qualidade orgânica</p>
                   </div>
                 </div>
               </div>
