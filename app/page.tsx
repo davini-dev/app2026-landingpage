@@ -244,9 +244,11 @@ export default function Home() {
               </div>
 
               <div className="pt-4">
-                <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground shadow-lg">
-                  <Smartphone className="w-5 h-5 mr-2" />
-                  Realizar Rastreamento
+                <Button asChild size="lg" className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:opacity-90 text-primary-foreground shadow-lg">
+                  <a href="https://qrcode.sauderealmicroverdes.club" target="_blank" rel="noopener noreferrer">
+                    <Smartphone className="w-5 h-5 mr-2" />
+                    Realizar Rastreamento
+                  </a>
                 </Button>
               </div>
             </div>
